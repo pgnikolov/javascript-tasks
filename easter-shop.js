@@ -2,12 +2,12 @@ function easterShop(input) {
     let currentEggs = parseInt(input[0]);
     let action = input[1];
     let index = 2;
-    let soldEggs = 0
+    let soldEggs = 0;
 
     while (true) {
         if (action == "Close"){
-            console.log(`Store is closed!`)
-            console.log(`${soldEggs} eggs sold.`)
+            console.log(`Store is closed!`);
+            console.log(`${soldEggs} eggs sold.`);
             break
         }
         let quantity = parseInt(input[index]);
@@ -20,8 +20,8 @@ function easterShop(input) {
                 console.log(`You can buy only ${currentEggs}.`)
                 break
             }else{
-                currentEggs -= quantity
-                soldEggs += quantity
+                currentEggs -= quantity;
+                soldEggs += quantity;
             }   
         }
         index ++;

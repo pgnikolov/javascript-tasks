@@ -2,7 +2,7 @@ function paintEggs(input) {
     let size = input[0];
     let color = input[1];
     let quantity = parseInt(input[2]);
-    let price = 0
+    let price = 0;
 
     if (color == "Red") {
         if (size == "Large") {

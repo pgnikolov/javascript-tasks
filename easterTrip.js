@@ -2,7 +2,7 @@ function easterTrip(input) {
     let destination = input[0];
     let dates = input[1];
     let nights = parseInt(input[2]);
-    let nightPrice = 0
+    let nightPrice = 0;
 
     switch (destination) {
         case "France":
@@ -34,7 +34,7 @@ function easterTrip(input) {
             break
     }
 
-    let totalCost = nightPrice * nights
+    let totalCost = nightPrice * nights;
 
     console.log(`Easter trip to ${destination} : ${(totalCost).toFixed(2)} leva.`);
 }
